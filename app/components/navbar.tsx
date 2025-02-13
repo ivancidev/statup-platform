@@ -5,7 +5,7 @@ import Link from "next/link";
 export default async function Navbar() {
   const session = await auth();
   return (
-    <header className="bg-white shadow text-black">
+    <header className="bg-white text-black">
       <nav className="flex justify-between items-center h-16 max-w-6xl mx-auto px-4">
         <Link href={"/"}>
           <Image src="/logo.png" alt="Logo" width={150} height={50} />
