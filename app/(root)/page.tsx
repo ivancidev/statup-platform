@@ -1,20 +1,7 @@
 import { SearchForm } from "@components/search-form";
 import { StartupCard } from "@components/startup-card";
+import { posts } from "app/data/posts";
 
-const posts = [
-  {
-    _id: 1,
-    title: "Startup 1",
-    views: 55,
-    _createAt: new Date(),
-    author: { _id: 1, name: "John Doe" },
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nullam in purus nec nulla lacinia sollicitudin. Nullam in purus nec nulla lacinia sollicitudin.",
-    category: { _id: 1, name: "Technology" },
-    image:
-      "https://th.bing.com/th/id/OIP.adWM0bAA_fOk5xUyFu-CGgHaFj?rs=1&pid=ImgDetMain",
-  },
-];
 export default async function Home({
   searchParams,
 }: {
