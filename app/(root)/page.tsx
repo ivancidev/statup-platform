@@ -5,9 +5,9 @@ import { posts } from "app/data/posts";
 export default async function Home({
   searchParams,
 }: {
-  searchParams: { query?: string };
+  searchParams: Promise<{ query?: string }>;
 }) {
-  const query = (await searchParams).query;
+  const { query } = await searchParams;
   return (
     <>
       <section className="pink_container">
