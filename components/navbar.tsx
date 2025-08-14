@@ -35,7 +35,7 @@ export default async function Navbar() {
                 await signIn("github");
               }}
             >
-              <span>Login</span>
+              <span className="text-blue-500">Inicia sesion</span>
             </button>
           )}
         </div>
